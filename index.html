@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <Title>Complaints Form</Title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div class="container-fluid" style="color:#1F5C2D;">
+            <br>
+            <div style="background-color:#D5EDDA !important; padding-top:2px;" class="jumbotron">
+                <h1 class="display-3">Complaint Registration</h1>
+                <p class="lead"><strong>Something bothering you? <em>Don't remain silent!</em></strong> If for any reason you are not comfortable with voicing a complaint in person then please do so anonymously by using this form.</p>
+                <hr class="my-4">
+
+                <div class="row">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-8">
+                        <form method="POST" action="http://formspree.io/complaints@opendatakosovo.org">
+                            <div class="form-group">
+                                <input type="hidden" name="_subject" value="A complaint has been registered." />
+
+                                <label>Your status:</label><br>
+                                <label class="radio-inline">
+                                  <input type="radio" name="status" checked>Staff&nbsp;&nbsp;&nbsp;&nbsp;
+                                </label>
+                                <label class="radio-inline">
+                                  <input type="radio" name="status">Workshop Participant&nbsp;&nbsp;&nbsp;&nbsp;
+                                </label>
+                                <label class="radio-inline">
+                                  <input type="radio" name="status">Client&nbsp;&nbsp;&nbsp;&nbsp;
+                                </label>
+                                <label class="radio-inline">
+                                  <input type="radio" name="status">Other&nbsp;&nbsp;&nbsp;&nbsp;
+                                </label>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="complaint">Please describe your complaint (be as detailed as possible):</label>
+                                <textarea class="form-control" style="height:250px;" name="message" id="complaint"></textarea>
+                            </div>
+
+                            <div class="form-group" align="center">
+                                <button class="btn btn-success" type="submit" style="width:100px;">Send</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-md-2"></div>
+                </div>
+
+            </div>
+        </div>
+    </body>
+</html>
