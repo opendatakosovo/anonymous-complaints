@@ -1,6 +1,7 @@
 <html>
     <head>
-        <title>Complaints Form</title>
+        <title>Complaint Registration Form</title>
+        <meta name="description" content="Something bothering you? Don't remain silent! If for any reason you are not comfortable with voicing a complaint in person then please do so anonymously by using this form.">
         <meta name="referrer" content="origin">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -19,20 +20,18 @@
                         <form method="POST" action="http://formspree.io/complaints@opendatakosovo.org">
                             <div class="form-group">
                                 <input type="hidden" name="_subject" value="A complaint has been registered." />
-                                <input type="hidden" name="email" value="noreply-complainee@opendatakosovo.org" />
-
                                 <label>Your status:</label><br>
                                 <label class="radio-inline">
-                                  <input type="radio" name="status" checked>Staff&nbsp;&nbsp;&nbsp;&nbsp;
+                                  <input type="radio" name="status" value="Staff" checked>Staff&nbsp;&nbsp;&nbsp;&nbsp;
                                 </label>
                                 <label class="radio-inline">
-                                  <input type="radio" name="status">Workshop Participant&nbsp;&nbsp;&nbsp;&nbsp;
+                                  <input type="radio" name="status" value="Workshop Participant">Workshop Participant&nbsp;&nbsp;&nbsp;&nbsp;
                                 </label>
                                 <label class="radio-inline">
-                                  <input type="radio" name="status">Client&nbsp;&nbsp;&nbsp;&nbsp;
+                                  <input type="radio" name="status" value="Client">Client&nbsp;&nbsp;&nbsp;&nbsp;
                                 </label>
                                 <label class="radio-inline">
-                                  <input type="radio" name="status">Other&nbsp;&nbsp;&nbsp;&nbsp;
+                                  <input type="radio" name="status" value="Other">Other&nbsp;&nbsp;&nbsp;&nbsp;
                                 </label>
                             </div>
 
